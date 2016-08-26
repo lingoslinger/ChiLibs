@@ -1,0 +1,17 @@
+//
+//  LibraryURLSession.h
+//  ChiLibs
+//
+//  Created by Allan Evans on 7/8/16.
+//  Copyright © 2016 lingo-slingers.org. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+typedef void(^CompletionHandler)(NSData *data, NSURLResponse *response, NSError *error);
+
+@interface LibraryURLSession : NSURLSession
+
+- (void)sendRequest:(id)sender completionHandler:(CompletionHandler)completionHandler;
+
+@end
