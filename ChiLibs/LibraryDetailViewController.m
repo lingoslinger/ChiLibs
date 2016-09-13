@@ -12,7 +12,7 @@
 
 @interface LibraryDetailViewController () <MKMapViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *libraryNameLabel;
+@property (weak, nonatomic) IBOutlet UITextView *libraryPhoneTextView;
 @property (weak, nonatomic) IBOutlet UILabel *libraryAddressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *libraryHoursLabel;
 @property (weak, nonatomic) IBOutlet MKMapView *libraryMapView;
@@ -25,7 +25,7 @@
 {
     [super viewDidLoad];
     self.title = self.detailLibrary.name;
-    self.libraryNameLabel.text = self.detailLibrary.name;
+    self.libraryPhoneTextView.text = [NSString stringWithFormat:@"Phone: %@", self.detailLibrary.phone];
     self.libraryAddressLabel.text = [NSString stringWithFormat:@"%@", self.detailLibrary.address];
     self.libraryHoursLabel.text = [self.detailLibrary.hoursOfOperation formattedHours];
     [self annotateMap];
