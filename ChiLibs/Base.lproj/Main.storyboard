@@ -98,7 +98,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="lCi-xb-GJu" secondAttribute="trailing" constant="20" id="15b-yF-dBO"/>
                             <constraint firstItem="a1u-2A-PLP" firstAttribute="leading" secondItem="gdy-ex-hTs" secondAttribute="leading" constant="15" id="1AG-4x-6Zo"/>
-                            <constraint firstItem="KQu-Zd-hpp" firstAttribute="top" secondItem="lCi-xb-GJu" secondAttribute="bottom" constant="13" id="M9y-LV-jYb"/>
+                            <constraint firstItem="KQu-Zd-hpp" firstAttribute="top" secondItem="lCi-xb-GJu" secondAttribute="bottom" constant="4" id="M9y-LV-jYb"/>
                             <constraint firstItem="lCi-xb-GJu" firstAttribute="leading" secondItem="gdy-ex-hTs" secondAttribute="leading" constant="20" id="NKj-Mv-BHK"/>
                             <constraint firstAttribute="trailing" secondItem="a1u-2A-PLP" secondAttribute="trailing" constant="14" id="Y8T-ZY-1R1"/>
                             <constraint firstItem="lCi-xb-GJu" firstAttribute="top" secondItem="xrp-xC-tjC" secondAttribute="bottom" id="drN-3j-8Yj"/>
@@ -119,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTq-gO-Lq3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1959" y="618"/>
+            <point key="canvasLocation" x="1957.5" y="617.95774647887322"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mTS-oL-aDT">
