@@ -62,3 +62,4 @@ fastlane/screenshots
 fastlane/test_output
 /ChiLibs.xcodeproj/project.xcworkspace/xcshareddata
 *.xcbkptlist
+.DS_Store
