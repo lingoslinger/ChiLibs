@@ -23,20 +23,11 @@
 
 @implementation LibraryTableViewController
 
-- (LibraryURLSession *)libraryURLSession
-{
-    if (_libraryURLSession == nil)
-    {
-        _libraryURLSession = [[LibraryURLSession alloc] init];
-    }
-    return _libraryURLSession;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     NSMutableArray *libraryArray = [NSMutableArray array];
-    [self.libraryURLSession sendRequest:self completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [LibraryURLSession sendRequest:self completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error == nil)
         {
             NSError *JSONerror;

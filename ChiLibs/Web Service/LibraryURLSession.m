@@ -10,7 +10,7 @@
 
 @implementation LibraryURLSession
 
-- (void)sendRequest:(id)sender completionHandler:(CompletionHandler)completionHandler
++ (void)sendRequest:(id)sender completionHandler:(CompletionHandler)completionHandler
 {
     NSURLSessionConfiguration* sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession* session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:nil delegateQueue:nil];

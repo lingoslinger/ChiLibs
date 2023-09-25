@@ -12,6 +12,6 @@ typedef void(^CompletionHandler)(NSData *data, NSURLResponse *response, NSError 
 
 @interface LibraryURLSession : NSURLSession
 
-- (void)sendRequest:(id)sender completionHandler:(CompletionHandler)completionHandler;
++ (void)sendRequest:(id)sender completionHandler:(CompletionHandler)completionHandler;
 
 @end
