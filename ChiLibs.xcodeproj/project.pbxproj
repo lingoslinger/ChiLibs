@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9D0943D61D8C7FA400446974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0943D51D8C7FA400446974 /* Main.storyboard */; };
+		9D3C8F1E2AF72FB00064DDEB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3C8F1D2AF72F8E0064DDEB /* MapKit.framework */; };
 		9D59D8A91D30BE5500FD73DE /* LibraryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D59D8A81D30BE5500FD73DE /* LibraryDetailViewController.m */; };
-		9D59D8AB1D31475500FD73DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D59D8AA1D31475500FD73DE /* MapKit.framework */; };
 		9D59D8AF1D31497A00FD73DE /* NSString+AGE_LibraryHourFormatting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D59D8AE1D31497A00FD73DE /* NSString+AGE_LibraryHourFormatting.m */; };
 		9D6825621D30AA3B00AFC174 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6825611D30AA3B00AFC174 /* main.m */; };
 		9D6825651D30AA3B00AFC174 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6825641D30AA3B00AFC174 /* AppDelegate.m */; };
@@ -23,9 +23,9 @@
 
 /* Begin PBXFileReference section */
 		9D0943D51D8C7FA400446974 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9D3C8F1D2AF72F8E0064DDEB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9D59D8A71D30BE5400FD73DE /* LibraryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryDetailViewController.h; sourceTree = "<group>"; };
 		9D59D8A81D30BE5500FD73DE /* LibraryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryDetailViewController.m; sourceTree = "<group>"; };
-		9D59D8AA1D31475500FD73DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9D59D8AD1D31497A00FD73DE /* NSString+AGE_LibraryHourFormatting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AGE_LibraryHourFormatting.h"; sourceTree = "<group>"; };
 		9D59D8AE1D31497A00FD73DE /* NSString+AGE_LibraryHourFormatting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AGE_LibraryHourFormatting.m"; sourceTree = "<group>"; };
 		9D68255D1D30AA3B00AFC174 /* ChiLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChiLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,13 +51,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D59D8AB1D31475500FD73DE /* MapKit.framework in Frameworks */,
+				9D3C8F1E2AF72FB00064DDEB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D3C8F1C2AF72F190064DDEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D3C8F1D2AF72F8E0064DDEB /* MapKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D59D8AC1D31493900FD73DE /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +94,7 @@
 		9D68255F1D30AA3B00AFC174 /* ChiLibs */ = {
 			isa = PBXGroup;
 			children = (
+				9D3C8F1C2AF72F190064DDEB /* Frameworks */,
 				9D59D8AC1D31493900FD73DE /* Categories */,
 				9D6825781D30AD1800AFC174 /* Data Models */,
 				9D6825771D30AD1000AFC174 /* Web Service */,
@@ -99,7 +108,6 @@
 				9D68256C1D30AA3B00AFC174 /* Assets.xcassets */,
 				9D6825711D30AA3B00AFC174 /* Info.plist */,
 				9D6825601D30AA3B00AFC174 /* Supporting Files */,
-				9D59D8AA1D31475500FD73DE /* MapKit.framework */,
 			);
 			path = ChiLibs;
 			sourceTree = "<group>";
@@ -161,7 +169,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = "lingo-slingers.org";
 				TargetAttributes = {
 					9D68255C1D30AA3B00AFC174 = {
@@ -255,6 +263,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -311,6 +320,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
