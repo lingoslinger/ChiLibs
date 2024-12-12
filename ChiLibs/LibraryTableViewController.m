@@ -83,7 +83,7 @@
     NSString *sectionTitle = self.sectionTitles[indexPath.section];
     NSArray *sectionArray = [self.sectionDictionary objectForKey:sectionTitle];
     Library *library = sectionArray[indexPath.row];
-    cell.textLabel.text = library.name;
+    cell.textLabel.text = library.branch;
     return cell;
 }
 
@@ -106,7 +106,7 @@
     self.sectionDictionary = [NSMutableDictionary dictionary];
     for (Library *library in libraryArray)
     {
-        NSString *firstLetterOfName = [library.name substringToIndex:1];
+        NSString *firstLetterOfName = [library.branch substringToIndex:1];
         
         if ([self.sectionDictionary objectForKey:firstLetterOfName] == nil)
         {

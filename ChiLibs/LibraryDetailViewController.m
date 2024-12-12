@@ -24,10 +24,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = self.detailLibrary.name;
+    self.title = self.detailLibrary.branch;
     self.libraryPhoneTextView.text = [NSString stringWithFormat:@"Phone: %@", self.detailLibrary.phone];
     self.libraryAddressLabel.text = [NSString stringWithFormat:@"%@", self.detailLibrary.address];
-    self.libraryHoursLabel.text = [self.detailLibrary.hoursOfOperation formattedHours];
+    self.libraryHoursLabel.text = [self.detailLibrary.serviceHours formattedHours];
     [self annotateMap];
 }
 
@@ -47,7 +47,7 @@
     
     MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
     point.coordinate = zoomLocation;
-    point.title = self.detailLibrary.name;
+    point.title = self.detailLibrary.branch;
     [self.libraryMapView addAnnotation:point];
     
     [self.libraryMapView setRegion:[self.libraryMapView regionThatFits:viewRegion] animated:YES];

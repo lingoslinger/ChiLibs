@@ -22,16 +22,16 @@
 	if(![dictionary[@"cybernavigator"] isKindOfClass:[NSNull class]]) {
 		self.cybernavigator = dictionary[@"cybernavigator"];
 	}	
-	if(![dictionary[@"hours_of_operation"] isKindOfClass:[NSNull class]]) {
-		self.hoursOfOperation = dictionary[@"hours_of_operation"];
-	}	
+	if(![dictionary[@"service_hours"] isKindOfClass:[NSNull class]]) {
+        self.serviceHours = dictionary[@"service_hours"];
+	}
 	if(![dictionary[@"location"] isKindOfClass:[NSNull class]]) {
 		self.location = [[Location alloc] initWithDictionary:dictionary[@"location"]];
 	}
 
-	if(![dictionary[@"name_"] isKindOfClass:[NSNull class]]) {
-		self.name = dictionary[@"name_"];
-	}	
+	if(![dictionary[@"branch_"] isKindOfClass:[NSNull class]]) {
+		self.branch = dictionary[@"branch_"];
+	}
 	if(![dictionary[@"phone"] isKindOfClass:[NSNull class]]) {
 		self.phone = dictionary[@"phone"];
 	}	
@@ -63,14 +63,14 @@
 	if(self.cybernavigator != nil) {
 		dictionary[@"cybernavigator"] = self.cybernavigator;
 	}
-	if(self.hoursOfOperation != nil) {
-		dictionary[@"hours_of_operation"] = self.hoursOfOperation;
+    if(self.serviceHours != nil) {
+        dictionary[@"hours_of_operation"] = self.serviceHours;
 	}
 	if(self.location != nil) {
 		dictionary[@"location"] = [self.location toDictionary];
 	}
-	if(self.name != nil) {
-		dictionary[@"name_"] = self.name;
+    if(self.branch != nil) {
+        dictionary[@"branch_"] = self.branch;
 	}
 	if(self.phone != nil) {
 		dictionary[@"phone"] = self.phone;

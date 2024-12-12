@@ -15,9 +15,9 @@
 @property (nonatomic, strong) NSString *address;
 @property (nonatomic, strong) NSString *city;
 @property (nonatomic, strong) NSString *cybernavigator;
-@property (nonatomic, strong) NSString *hoursOfOperation;
+@property (nonatomic, strong) NSString *serviceHours;
 @property (nonatomic, strong) Location *location;
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *branch;
 @property (nonatomic, strong) NSString *phone;
 @property (nonatomic, strong) NSString *state;
 @property (nonatomic, strong) NSString *teacherInTheLibrary;
